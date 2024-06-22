@@ -25,7 +25,7 @@ sidebar:
 
 ## 第三种
 
-- 使用 [标签超市](tags.novelai.dev) 自行组合标签
+- 使用 [标签超市](https://tags.novelai.dev/) 自行组合标签
 :::tip[偷偷地说]
 好孩子不要开启右上角的*分级限制*哦
 :::
