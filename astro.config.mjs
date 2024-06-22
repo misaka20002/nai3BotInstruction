@@ -6,7 +6,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '宝宝巴士也能学会的Nai3Bot指南',
-			favicon: './src/assets/my-logo.svg',
+			favicon: './src/assets/my-logo.ico',
 			social: {
 				github: 'https://github.com/misaka20002',
 			},
