@@ -1,36 +1,42 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Nai3Bot指南
+description: Nai3Bot指南
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 宝宝巴士也能学会的Nai3Bot指南
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/last_orderInTheWall.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 开始教程
+      link: /欢迎/使用指令
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: 我要入群
+      link: /结语/结语
       icon: external
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+## 我们群里有
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="会画画的派蒙" icon="pencil">
+		已接入NovelAi图片生成
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="穿雪糕的群友" icon="add-document">
+		每日吃雪糕
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="会说日语的可莉" icon="setting">
+		已接入Fish-Vits语音生成
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="会女装的群主" icon="open-book">
+		群主就是小派蒙哦
 	</Card>
 </CardGrid>
+
+<LinkCard
+  title="立即开始教程"
+  description="了解如何使用群内的绘画机器人"
+  href="/欢迎/使用指令"
+/>

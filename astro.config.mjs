@@ -5,21 +5,21 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: '宝宝巴士也能学会的Nai3Bot指南',
+			favicon: './src/assets/my-logo.svg',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/misaka20002',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+					label: '欢迎',
+					// 自动生成一个链接分组。
+					autogenerate: { directory: '欢迎' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: '结语',
+					// 自动生成一个链接分组。
+					autogenerate: { directory: '结语' },
 				},
 			],
 		}),
