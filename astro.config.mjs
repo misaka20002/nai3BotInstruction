@@ -6,6 +6,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '宝宝巴士也能学会的Nai3Bot指南',
+			description: '一个关于接入NovelAi的基于云崽bot的绘画机器人使用指南。',
 			favicon: './my-logo.ico',
 			customCss: [
 				// 你的自定义 CSS 文件的相对路径
