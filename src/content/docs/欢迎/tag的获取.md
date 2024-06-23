@@ -1,5 +1,5 @@
 ---
-title: tag的获取
+title: tags的获取
 # description: A guide in my new Starlight docs site.11
 sidebar:
   # 为链接设置自定义标签

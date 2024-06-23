@@ -7,6 +7,10 @@ export default defineConfig({
 		starlight({
 			title: '宝宝巴士也能学会的Nai3Bot指南',
 			favicon: './my-logo.ico',
+			customCss: [
+				// 你的自定义 CSS 文件的相对路径
+				'./src/styles/custom.css',
+			],
 			social: {
 				github: 'https://github.com/misaka20002',
 			},
