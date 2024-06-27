@@ -12,7 +12,7 @@ sidebar:
 #     variant: tip
 ---
 ## 第一种
-- 使用中文描述后，用翻译软件或chatgpt翻译成英文。
+- 使用中文描述后，用翻译软件或chatgpt翻译成英文（或者自己写>_<）。
 ## 第二种
 - 去 [danbooru](https://danbooru.donmai.us/) 或黄三角或其他booru网站，自行查看每种图片的tag后，自行加入你想要的tag中。
 
