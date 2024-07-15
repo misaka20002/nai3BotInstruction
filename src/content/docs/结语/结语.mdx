@@ -12,7 +12,10 @@ sidebar:
 #     text: New
 #     variant: tip
 ---
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
+
+import TestimonialGrid from '../../../components/testimonial-grid.astro';
+import Testimonial from '../../../components/testimonial.astro';
 
 此教程仅为个人理解，欢迎入群讨论。
 
@@ -31,10 +34,83 @@ import { LinkCard, CardGrid } from '@astrojs/starlight/components';
        —— 萌狼犬 小呆毛
 :::
 
-##### 我的主页
+#
+#### 小呆毛的主页
 
 <CardGrid>
   <LinkCard title="Pixiv" href="https://www.pixiv.net/users/3289652" />
-  <LinkCard title="Bilibili" href="https://space.bilibili.com/1956145" />
-  <LinkCard title="Github" href="https://github.com/misaka20002" />
+  <LinkCard title="BiliBili" href="https://space.bilibili.com/1956145" />
 </CardGrid>
+  <LinkCard title="Github" href="https://github.com/misaka20002" />
+
+
+<TestimonialGrid title="- 关于我们 -">
+
+
+
+
+
+
+  <Testimonial
+    name="小呆毛"
+    handle="2542136355"
+    cite="https://space.bilibili.com/1956145"
+  >
+    呆毛只是一只呆毛QAQ~能做到的只有这些了
+  </Testimonial>
+
+  <Testimonial
+    name="萌狼犬"
+    handle="1058331902"
+    cite="https://space.bilibili.com/82143414"
+  >
+    工作还不如睡觉~性别未知；职业是吧台小妹、理万姬
+  </Testimonial>
+
+  <Testimonial
+    name="小姬谜"
+    handle="3139737896"
+    cite="https://space.bilibili.com/327297699"
+  >
+    食不食油饼呀？食不食鸭脖呀？职业：注册鉴黄师；其实真实身份是群卧底
+  </Testimonial>
+
+  <Testimonial
+    name="满心欢喜的滑稽"
+    handle="3345885119"
+    cite="https://space.bilibili.com/"
+  >
+    我今天要下十个蛋！你今天要下二十个蛋！其实是P图糕手
+  </Testimonial>
+
+  <Testimonial
+    name="宝宝巴士"
+    handle="1144749368"
+    cite="https://space.bilibili.com/399743615"
+  >
+    我们女孩子用身体赚钱有什么错？性别插座；其实是普通女子高中生
+  </Testimonial>
+
+  <Testimonial
+    name="小唯"
+    handle="2841654079"
+    cite="https://space.bilibili.com/1947475055"
+  >
+    救命好多蚊子！打工人打工魂打工才是人上人！身份是未注册会计师
+  </Testimonial>
+
+  <Testimonial
+    name="您"
+    handle="诚邀您的加入"
+    cite="https://space.bilibili.com/"
+  >
+    我什么都愿意做！我什么都愿意吃！
+  </Testimonial>
+
+
+
+
+
+  
+</TestimonialGrid>
+
