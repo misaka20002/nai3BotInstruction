@@ -14,6 +14,8 @@ export default defineConfig({
 			],
 			social: {
 				github: 'https://github.com/misaka20002',
+				instagram: 'https://www.pixiv.net/users/3289652',
+				blueSky: 'https://space.bilibili.com/1956145',
 			},
 			sidebar: [
 				{
