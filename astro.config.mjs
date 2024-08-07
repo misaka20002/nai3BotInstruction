@@ -28,6 +28,11 @@ export default defineConfig({
 					// 自动生成一个链接分组。
 					autogenerate: { directory: '结语' },
 				},
+				{
+					label: 'Bot部署配置',
+					// 自动生成一个链接分组。
+					autogenerate: { directory: 'Bot部署配置' },
+				},
 			],
 		}),
 	],
