@@ -19,19 +19,19 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: '欢迎',
+					label: 'Nai3bot指南',
 					// 自动生成一个链接分组。
-					autogenerate: { directory: '欢迎' },
+					autogenerate: { directory: 'nai3bot指南' },
 				},
 				{
-					label: '结语',
+					label: '关于我们',
 					// 自动生成一个链接分组。
-					autogenerate: { directory: '结语' },
+					autogenerate: { directory: '关于我们' },
 				},
 				{
 					label: 'Bot部署配置',
 					// 自动生成一个链接分组。
-					autogenerate: { directory: 'Bot部署配置' },
+					autogenerate: { directory: 'bot部署配置' },
 				},
 			],
 		}),
