@@ -31,7 +31,7 @@ export default defineConfig({
 				{
 					label: 'Bot部署配置',
 					// 自动生成一个链接分组。
-					autogenerate: { directory: 'botdevhelp' },
+					autogenerate: { directory: 'devhelp' },
 				},
 			],
 		}),
