@@ -12,7 +12,7 @@ sidebar:
     variant: tip
 ---
 
-## 基于nai4预览版：
+## 基于nai4 full正式版：
 
 :::note[绘画公式]
 #绘画nai4模型2girl, loli, amazing quality, very aesthetic, absurdres, 
@@ -54,5 +54,5 @@ ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad qu
 
 
 :::danger[注意]
-- nai4模型预览版 暂不支持：smea、引用图片、局部重画，输入将报错
+- nai4 full正式版 暂不支持：smea、引用图片，输入将返回500错误。
 :::
