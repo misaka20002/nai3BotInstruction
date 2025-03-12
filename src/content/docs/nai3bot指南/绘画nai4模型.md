@@ -74,5 +74,5 @@ ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad qu
 
 
 :::danger[注意]
-- nai4 full正式版 暂不支持：smea、引用图片，输入将返回500错误。
+- nai4 full正式版 暂不支持：smea、氛围转移（引用图片），输入将返回500错误。
 :::
