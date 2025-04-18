@@ -72,7 +72,23 @@ ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad qu
 ```
 :::
 
+### nai4氛围转移
+
+- 发送 `#氛围转移` 查看可用指令
+- 发送 `#派蒙nai查看氛围转移` 查看已经保存的氛围转移文件
+- 官网说明:
+  - 因处理复杂度提升，​​每个编码图像需支付 **2 Anlas​​**
+  - 现在nai4生成的PNG图像会​​自动嵌入Vibe编码信息
+  - Information Extracted: 
+    - 1.0：尽可能还原所有细节和风格。
+    - 较低值：侧重构图，减少细节传递。
+  - 多Vibe支持
+    - 最多支持​​16个Vibe同时应用
+    - 超过4个Vibe时，每增加1个需额外支付2 Anlas
+    - ​​建议​​：所有Vibe的强度总和≤1.0，以获得最佳效果
+
+### 其他
 
 :::danger[注意]
-- nai4 full正式版 暂不支持：smea、氛围转移（引用图片），输入将返回500错误。
+- nai4 full正式版 暂不支持：smea，输入将返回500错误。
 :::
