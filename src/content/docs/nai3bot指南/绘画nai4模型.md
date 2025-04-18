@@ -76,6 +76,7 @@ ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad qu
 
 - 发送 `#氛围转移` 查看可用指令
 - 发送 `#派蒙nai查看氛围转移` 查看已经保存的氛围转移文件
+- 指令: `{氛围vibe1转移} {氛围vibe2转移}`
 - 官网说明:
   - 因处理复杂度提升，​​每个编码图像需支付 **2 Anlas​​**
   - 现在nai4生成的PNG图像会​​自动嵌入Vibe编码信息
@@ -86,6 +87,20 @@ ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad qu
     - 最多支持​​16个Vibe同时应用
     - 超过4个Vibe时，每增加1个需额外支付2 Anlas
     - ​​建议​​：所有Vibe的强度总和≤1.0，以获得最佳效果
+
+:::note[氛围转移]
+```
+#绘画nai4模型 {氛围派蒙生日_官图转移} {氛围纳西妲生日_官图转移} {氛围可莉生日_官图转移} 3girls, loli, amazing quality, very aesthetic, absurdres, 
+
+{人物 paimon (genshin impact) 人物}, 
+
+{人物 nahida (genshin impact), {位置左} 人物}, 
+
+{人物 klee (genshin impact), t-shirt, white pantyhose, {位置右}, ntags = hat, bag 人物}
+
+ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, logo, dated, signature, multiple views, gigantic breasts
+```
+:::
 
 ### 其他
 
