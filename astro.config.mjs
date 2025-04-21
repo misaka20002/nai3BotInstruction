@@ -12,11 +12,11 @@ export default defineConfig({
 				// 你的自定义 CSS 文件的相对路径
 				'./src/styles/custom.css',
 			],
-			social: {
-				github: 'https://github.com/misaka20002',
-				instagram: 'https://www.pixiv.net/users/3289652',
-				blueSky: 'https://space.bilibili.com/1956145',
-			},
+			social: [
+				{ label: 'GitHub', icon: 'github', href: 'https://github.com/misaka20002' },
+				{ label: 'Pixiv', icon: 'instagram', href: 'https://www.pixiv.net/users/3289652' },
+				{ label: 'Bilibili', icon: 'twitter', href: 'https://space.bilibili.com/1956145' },
+			],
 			sidebar: [
 				{
 					label: 'Nai3bot指南',
