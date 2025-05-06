@@ -11,9 +11,10 @@ sidebar:
     text: New
     variant: tip
 ---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 :::note
-以下内容基于 nai4 full 正式版
+以下内容基于 nai4 full 正式版 和 nai4.5 测试版
 :::
 
 ### nai4画师和画风的改进点：
@@ -25,10 +26,18 @@ sidebar:
 *   **内置Furry模型**：喜欢毛茸茸的用户，可以使用 `fur dataset,` 标签来启动提示词，像以前的毛茸茸模型一样使用。
 *   **新增特殊标签和短语**：包括 `Character Study`、`photo (medium), photographic doll`、 `artist:ainiwaffles` 等。自然语言描述也能影响图像的艺术风格，如使用 “highly finished”、“digital illustration” 等短语。
 
+### nai4.5的改进点：
+
+*   可以更精确的[生成英文文本](#生成英文文本)。
+*   相比于nai4，算是能用了...
+
 ---
 
 ### Bot指令：
 
+<Tabs syncKey="版本">
+
+  <TabItem label="nai4" icon="star">
 ```text
 #绘画nai4模型2girl, loli, amazing quality, very aesthetic, absurdres, 
 
@@ -36,6 +45,22 @@ sidebar:
 
 {人物 klee (genshin impact), t-shirt, white pantyhose, {位置右}, ntags = hat, bag 人物}
 ```
+  </TabItem>
+
+
+  <TabItem label="nai4.5" icon="sun">
+```text
+#绘画nai4.5模型2girl, loli, amazing quality, very aesthetic, absurdres, 
+
+{人物 nahida (genshin impact), {位置左} 人物}, 
+
+{人物 klee (genshin impact), t-shirt, white pantyhose, {位置右}, ntags = hat, bag 人物}
+```
+  </TabItem>
+
+</Tabs>
+
+
 
 #### 多角色指令解析：
 - 除了定义整体的画面之外，还可以独立指定每个角色
@@ -52,8 +77,10 @@ sidebar:
 :::
 
 ### 同时定义6个小可爱！
-:::note[绘画公式]
-```
+<Tabs syncKey="版本">
+
+  <TabItem label="nai4" icon="star">
+```text
 #绘画nai4模型 6girls, loli, amazing quality, very aesthetic, absurdres, 
 
 {人物 paimon (genshin impact) 人物}, 
@@ -70,9 +97,33 @@ sidebar:
 
 ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, logo, dated, signature, multiple views, gigantic breasts
 ```
-:::
+  </TabItem>
 
-### nai4氛围转移
+
+  <TabItem label="nai4.5" icon="sun">
+```text
+#绘画nai4.5模型 6girls, loli, amazing quality, very aesthetic, absurdres, 
+
+{人物 paimon (genshin impact) 人物}, 
+
+{人物 nahida (genshin impact), {位置左} 人物}, 
+
+{人物 klee (genshin impact), t-shirt, white pantyhose, {位置右}, ntags = hat, bag 人物}
+
+{人物 sayu (genshin impact)， {位置左左下下} 人物}, 
+
+{人物 diona (genshin impact), {位置右右下下} 人物}, 
+
+{人物 yaoyao (genshin impact), black pantyhose, {位置上上}, ntags = bag 人物}
+
+ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, multiple views, logo, too many watermarks
+```
+  </TabItem>
+
+</Tabs>
+
+
+### nai4 氛围转移
 
 - 发送 `#氛围转移` 查看可用指令
 - 发送 `#派蒙nai查看氛围转移` 查看已经保存的氛围转移文件
@@ -88,8 +139,10 @@ ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad qu
     - 超过4个Vibe时，每增加1个需额外支付2 Anlas
     - ​​建议​​：所有Vibe的强度总和≤1.0，以获得最佳效果
 
-:::note[氛围转移]
-```
+<Tabs syncKey="版本">
+
+  <TabItem label="nai4" icon="star">
+```text
 #绘画nai4模型 {氛围派蒙生日_官图转移} {氛围纳西妲生日_官图转移} {氛围可莉生日_官图转移} 3girls, loli, amazing quality, very aesthetic, absurdres, 
 
 {人物 paimon (genshin impact) 人物}, 
@@ -100,7 +153,51 @@ ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad qu
 
 ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, logo, dated, signature, multiple views, gigantic breasts
 ```
-:::
+  </TabItem>
+
+
+  <TabItem label="nai4.5" icon="sun">
+```text
+#绘画nai4.5模型 {氛围派蒙生日_官图转移} {氛围纳西妲生日_官图转移} {氛围可莉生日_官图转移} 3girls, loli, amazing quality, very aesthetic, absurdres, 
+
+{人物 paimon (genshin impact) 人物}, 
+
+{人物 nahida (genshin impact), {位置左} 人物}, 
+
+{人物 klee (genshin impact), t-shirt, white pantyhose, {位置右}, ntags = hat, bag 人物}
+
+ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, multiple views, logo, too many watermarks
+```
+  </TabItem>
+
+</Tabs>
+
+
+### 生成英文文本
+
+#### 示例：
+
+<Tabs syncKey="版本">
+
+  <TabItem label="nai4" icon="star">
+```text
+nai4 不支持哦，请转到 nai4.5 标签页
+```
+  </TabItem>
+
+
+  <TabItem label="nai4.5" icon="sun">
+```text
+#绘画nai4.5模型 girls, text, english text, location, -1::monochrome, speech bubble, simple background ::, looking at another, masterpiece, best quality, rating:general. The blonde girl is excitedly asking "How are you?" and the purple haired girl is responding "Fine, thanks" with a bored expression on her face. Text: How are you?
+
+Fine, thanks
+| 1girl, purple eyes, short hair, ruffled blouse, red blouse, blonde hair, green scarf, blunt bangs, fang, small breasts, long sleeves, bob cut
+| 1girl, very long hair, purple hair, curly hair, golden shirt, full body, green eyes, turtleneck sweater, sleeveless turtleneck, side braid, medium breasts, sleeveless
+```
+  </TabItem>
+
+</Tabs>
+
 
 ### 其他
 
