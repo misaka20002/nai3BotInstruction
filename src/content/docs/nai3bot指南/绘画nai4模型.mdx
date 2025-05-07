@@ -38,12 +38,17 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
   <TabItem label="nai4" icon="star">
 ```text
-#绘画nai4模型2girl, loli, amazing quality, very aesthetic, absurdres, 
+#绘画nai4模型artist:nanmokaken, artist:sho_(sho_lwlw), artist:tianliang duohe fangdongye, [artist:shiratamaco], [artist:nekoshoko], [[artist:alkemanubis]], 2girl, loli, amazing quality, very aesthetic, absurdres, 
 
 {人物 nahida (genshin impact), {位置左} 人物}, 
 
 {人物 klee (genshin impact), t-shirt, white pantyhose, {位置右}, ntags = hat, bag 人物}
 ```
+
+![nai4_5_3girl围一圈示例图](../../../assets/教程中图片/nai4_2girl示例图.webp)
+
+> *图注：nai4 full 生成*
+
   </TabItem>
 
 
@@ -57,13 +62,14 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 {人物 klee (genshin impact), {位置右下}, t-shirt, white pantyhose, ntags = hat, bag 人物}
 ```
-  </TabItem>
-
-</Tabs>
 
 ![nai4_5_3girl围一圈示例图](../../../assets/教程中图片/nai4_5_3girl围一圈示例图.webp)
 
 > *图注：nai4.5 测试版生成*
+
+  </TabItem>
+
+</Tabs>
 
 #### 多角色指令解析：
 - 除了定义整体的画面之外，还可以独立指定每个角色
@@ -124,57 +130,6 @@ ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad qu
   </TabItem>
 
 </Tabs>
-
-
-### nai4氛围转移
-
-- 发送 `#氛围转移` 查看可用指令
-- 发送 `#派蒙nai查看氛围转移` 查看已经保存的氛围转移文件
-- 指令: `{氛围vibe1转移} {氛围vibe2转移}`
-- 官网说明:
-  - 因处理复杂度提升，​​每个编码图像需支付 **2 Anlas​​**
-  - 现在nai4生成的PNG图像会​​自动嵌入Vibe编码信息
-  - Information Extracted: 
-    - 1.0：尽可能还原所有细节和风格。
-    - 较低值：侧重构图，减少细节传递。
-  - 多Vibe支持
-    - 最多支持​​16个Vibe同时应用
-    - 超过4个Vibe时，每增加1个需额外支付2 Anlas
-    - ​​建议​​：所有Vibe的强度总和≤1.0，以获得最佳效果
-
-<Tabs syncKey="版本">
-
-  <TabItem label="nai4" icon="star">
-```text
-#绘画nai4模型 {氛围派蒙生日_官图转移} {氛围纳西妲生日_官图转移} {氛围可莉生日_官图转移} 3girls, loli, amazing quality, very aesthetic, absurdres, 
-
-{人物 paimon (genshin impact) 人物}, 
-
-{人物 nahida (genshin impact), {位置左} 人物}, 
-
-{人物 klee (genshin impact), t-shirt, white pantyhose, {位置右}, ntags = hat, bag 人物}
-
-ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, logo, dated, signature, multiple views, gigantic breasts
-```
-  </TabItem>
-
-
-  <TabItem label="nai4.5" icon="sun">
-```text
-#绘画nai4.5模型 {氛围派蒙生日_官图转移} {氛围纳西妲生日_官图转移} {氛围可莉生日_官图转移} 3girls, loli, amazing quality, very aesthetic, absurdres, 
-
-{人物 paimon (genshin impact) 人物}, 
-
-{人物 nahida (genshin impact), {位置左} 人物}, 
-
-{人物 klee (genshin impact), t-shirt, white pantyhose, {位置右}, ntags = hat, bag 人物}
-
-ntags = blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, multiple views, logo, too many watermarks
-```
-  </TabItem>
-
-</Tabs>
-
 
 ### 渲染文本
 
