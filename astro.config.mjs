@@ -29,6 +29,11 @@ export default defineConfig({
 					autogenerate: { directory: '关于我们' },
 				},
 				{
+					label: '法典',
+					// 自动生成一个链接分组。
+					autogenerate: { directory: '法典' },
+				},
+				{
 					label: 'Bot部署配置',
 					// 自动生成一个链接分组。
 					autogenerate: { directory: 'devhelp' },
