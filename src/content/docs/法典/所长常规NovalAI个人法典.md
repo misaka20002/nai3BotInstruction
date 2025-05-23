@@ -5,12 +5,12 @@ sidebar:
   # 为链接设置自定义标签
 ##   label: 自定义侧边栏 label
   # 为链接设置自定义顺序（数字越小显示在上方）
-  order: 1
+  order: 2
   # 为链接添加徽章
 ##   badge:
 ##     text: New
 ##     variant: tip
-prev: false
+# prev: false
 # next: false
 ## 正则表达式：匹配中文开头：^(?=[\u4e00-\u9fa5][^\u4e00-\u9fa5]*) to ### 
 ## 正则表达式：匹配?开头：^\s* to ## 
