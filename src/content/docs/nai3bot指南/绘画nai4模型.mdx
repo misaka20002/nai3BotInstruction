@@ -14,10 +14,10 @@ sidebar:
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 :::note
-以下内容基于 nai4 full 正式版 和 nai4.5 测试版
+以下内容基于 nai4-full 正式版 和 nai4.5-full 正式版
 :::
 
-### nai4画师和画风的改进点：
+### nai4的特点：
 
 *   **多角色提示**：支持在单个图像中为多达六个不同角色分别指定提示，并减少角色间的信息泄漏。
 *   **动作标签**：可以使用 `source#`, `target#` 或 `mutual#` 前缀指定动作标签，以便更清晰地描述角色间的互动；例如：`source#hug` （发起拥抱的角色）, `target#hug` （被拥抱的角色）, `mutual#hug` （互相拥抱的角色）。
@@ -27,8 +27,8 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ### nai4.5的改进点：
 
-*   可以更精确地进行[渲染文本](#渲染文本)。
-*   相比于nai4，终于算是能用了...
+*   可以更精确地进行渲染文本，并支持英文大小写。
+*   相比于nai4，nai4.5的画风融合得更好了。
 
 ---
 
@@ -163,5 +163,5 @@ Fine, thanks
 ### 其他
 
 :::danger[注意]
-- nai4 full正式版 暂不支持：smea，输入将返回500错误。
+- nai4-full 正式版 和 nai4.5-full 正式版 暂不支持 smea 采样器。
 :::
